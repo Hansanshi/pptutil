@@ -2,7 +2,7 @@
 This is a library that can convert slideshow (ppt or pptx format) to images (jpg, png, bmp or wbmp format).
 这个工具类可以将ppt或者pptx文件转换为图片（支持4中格式jpg、png、bmp和wbmp）。
 
-# demo
+# Demo
 Some examples to show how to use this.
 这是一些展示如何使用的小例子
 ```java
@@ -56,7 +56,7 @@ PPTToImgConverter.setDir("E:/testppt")
         //start the conversion of first page. 开始转换，只转换第一页。
         .convertFirstPage(); 
 ```
-# dependencies
+# Dependencies
 ```
 <!-- 操作ppt所需依赖 manipulate slideshow -->
         <dependency>
