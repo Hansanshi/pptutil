@@ -1,4 +1,4 @@
-# pptutil
+# PPTToImgConverter 
 This is a library that can convert slideshow (ppt or pptx format) to images (jpg, png, bmp or wbmp format).
 这个工具类可以将ppt或者pptx文件转换为图片（支持4中格式jpg、png、bmp和wbmp）。
 
