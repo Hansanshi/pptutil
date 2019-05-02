@@ -61,27 +61,27 @@ public class PPTToImgConverter {
     private File outputDirPrefix;
 
     /**设置操作目录*/
-    public static PPTToImgConverter setDir(String dirPrefix){
+    public static PPTToImgConverter dir(String dirPrefix){
         return new PPTToImgConverter(dirPrefix);
     }
     /**选择单个文件或者文件夹*/
-    public PPTToImgConverter loadFile(String filePath){
-        return loadFile(new File(filePath));
+    public PPTToImgConverter file(String filePath){
+        return file(new File(filePath));
     }
     /**选择单个文件或者文件夹*/
-    public PPTToImgConverter loadFile(File file){
-        return loadFiles(new File[]{file});
+    public PPTToImgConverter file(File file){
+        return files(new File[]{file});
     }
     /**选择多个文件或者文件夹*/
-    public PPTToImgConverter loadFiles(String[] filePaths){
+    public PPTToImgConverter files(String[] filePaths){
         File[] files = new File[filePaths.length];
         for (int i = 0; i < filePaths.length; i++) {
             files[i] = new File(filePaths[i]);
         }
-        return loadFiles(files);
+        return files(files);
     }
     /**选择多个文件或者文件夹*/
-    public PPTToImgConverter loadFiles(File[] files){
+    public PPTToImgConverter files(File[] files){
         List<File> slideshowFiles = new ArrayList<>();
         for (File file:files){
             if (file.isDirectory()){
@@ -102,7 +102,7 @@ public class PPTToImgConverter {
      * @param scale 临时图片放大倍数
      * @return this
      */
-    public PPTToImgConverter setScale(int scale){
+    public PPTToImgConverter scale(int scale){
         if (scale<=0){
             throw new IllegalArgumentException("scale must be positive");
         }
@@ -116,8 +116,8 @@ public class PPTToImgConverter {
      * @param height 分辨率高度
      * @return this
      */
-    public PPTToImgConverter setSize(int width, int height){
-        return this.setWidth(width).setHeight(height);
+    public PPTToImgConverter size(int width, int height){
+        return this.width(width).height(height);
     }
 
     /**
@@ -125,7 +125,7 @@ public class PPTToImgConverter {
      * @param width 分辨率宽度
      * @return this
      */
-    public PPTToImgConverter setWidth(int width){
+    public PPTToImgConverter width(int width){
         if (width<=0){
             throw new IllegalArgumentException("width must be positive");
         }
@@ -138,7 +138,7 @@ public class PPTToImgConverter {
      * @param height 分辨率高度
      * @return this
      */
-    public PPTToImgConverter setHeight(int height){
+    public PPTToImgConverter height(int height){
         if (height<=0){
             throw new IllegalArgumentException("height must be positive");
         }
@@ -151,7 +151,7 @@ public class PPTToImgConverter {
      * @param ratio 压缩比例
      * @return this
      */
-    public PPTToImgConverter setRatio(double ratio){
+    public PPTToImgConverter ratio(double ratio){
         if (ratio <= Double.MIN_VALUE){
             throw new IllegalArgumentException("ratio must be positive");
         }
@@ -179,7 +179,7 @@ public class PPTToImgConverter {
         return this;
     }
 
-    public PPTToImgConverter setImgFormat(String format){
+    public PPTToImgConverter imgFormat(String format){
         if (JPG.equals(format)
         ||PNG.equals(format)
         ||BMP.equals(format)
