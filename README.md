@@ -6,10 +6,10 @@ This is a library that can convert slideshow (ppt or pptx format) to images (jpg
 Some examples to show how to use this.
 这是一些展示如何使用的小例子
 ```java
-        /**
-         *A simple demo, all slides will be converted, and the resolution of images is consistent with that of slideshow.
-         *简单例子，以自身分辨率输出ppt的每一页
-         */
+/**
+ *A simple demo, all slides will be converted, and the resolution of images is consistent with that of slideshow.
+ *简单例子，以自身分辨率输出ppt的每一页
+ */
 // set the parent directory of converted images. 设置图片输出目录。
         PPTToImgConverter.dir("E:/testppt")
                 //select a file or folder. 选择一个文件或者文件夹。
