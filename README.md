@@ -1,5 +1,6 @@
 # PPTToImgConverter 
-This is a library that can convert slideshow (ppt or pptx format) to images (jpg, png, bmp or wbmp format).
+This is a library that can convert slideshow (ppt or pptx format) into images (jpg, png, bmp or wbmp format) .
+
 这个工具类可以将ppt或者pptx文件转换为图片（支持4中格式jpg、png、bmp和wbmp）。
 
 # Demo
@@ -7,10 +8,10 @@ Some examples to show how to use this.
 这是一些展示如何使用的小例子
 ```java
 /**
- *A simple demo, all slides will be converted, and the resolution of images is consistent with that of slideshow.
+ *A simple demo, all slides will be converted, and the resolution of images is consistent with that of origin slideshow.
  *简单例子，以自身分辨率输出ppt的每一页
  */
-// set the parent directory of converted images. 设置图片输出目录。
+// set the parent directory of converted images, it's necessary. 设置图片输出目录。
         PPTToImgConverter.dir("E:/testppt")
                 //select a file or folder. 选择一个文件或者文件夹。
                 .file("E:/test.pptx")
