@@ -1,6 +1,7 @@
 # PPTToImgConverter 
 This is a library that can convert slideshow (ppt or pptx format) into images (jpg, png, bmp or wbmp format) .
-
+It's based on Apache POI，but with images of higher quality and simplier apis.
+What you need to use the library，is just importing the dependencies and the single class.
 这个工具类可以将ppt或者pptx文件转换为图片（支持4中格式jpg、png、bmp和wbmp）。
 
 # Demo
